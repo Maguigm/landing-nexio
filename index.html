@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="interactive-bg-container">
+       <canvas id="bg-canvas"></canvas>
+       <div class="bg-overlay-interactive"></div>
+    </div>
+   <!--Menú-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 custom-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+             <img src="imagenes/Logo-nexiosit.webp" alt="Nexio SIT" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                   <li class="nav-item"><a class="nav-link px-3" href="#inicio">Inicio</a></li>
+                   <li class="nav-item"><a class="nav-link px-3" href="#nosotros">¿Quiénes somos?</a></li>
+                   <li class="nav-item"><a class="nav-link px-3" href="#servicios">Servicios</a></li>
+                   <li class="nav-item ms-lg-3">
+                    <a class="btn btn-nexio-primary rounded-pill px-4 fw-bold" href="#contacto">Contáctanos</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Menú-->
+
+    <!--Heroe-->
+    <section id="inicio" class="hero-section d-flex align-items-center justify-content-center text-center px-3 px-md-5">
+      <div class="hero-overlay"></div>
+    
+        <div class="container  px-md-5 z-index-10">
+            <div class="badge-container animate-fade-in">
+                <span class="badge rounded-pill bg-white text-dark px-3 py-2">Soluciones inteligentes</span>
+                <span class="ms-2 text-white-50">IA que genera resultados</span>
+            </div>
+
+            <h1 class="display-2 fw-bold text-white mt-4 mb-4  px-5 animate-slide-up">
+                Automatiza tu negocio con Inteligencia Artificial y  <br> <span class="text-cyan">empieza a crecer sin límites</span>
+            </h1>
+
+            <p class="lead text-white-50 mx-auto mt-4 mb-5 max-w-700 animate-slide-up-delayed">
+                Optimiza tus procesos de marketing, CRM y atención al cliente con automatizaciones inteligentes y chatbots que trabajan por ti 24/7.
+            </p>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center  gap-3 animate-slide-up-delayed">
+                <a href="#" class="btn btn-nexio-primary btn-lg rounded-pill px-5 btn-hero-custom">
+                    Agendar consultoría <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 btn-hero-custom">
+                    Ver Demo IA <i class="bi bi-play-circle ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--Heroe-->
+
+    <!--Tecnologias-->
+    <div class="partners-section py-5 mb-lg-5 px-4 px-md-5 animate-fade-in-delayed">
+        <p class="text-white-50 text-center small mb-4">Potenciamos tu negocio con tecnología de vanguardia</p>
+    
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+                    <img src="imagenes/logo-n8n.webp" alt="n8n" class="partner-logo img-fluid mb-2">
+                    
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+                    <img src="imagenes/Logo-openai.webp" alt="OpenAI" class="partner-logo img-fluid mb-2">
+                    
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+                    <img src="imagenes/Logo-hub.webp" alt="CRMs" class="partner-logo img-fluid mb-2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Quienes somos-->
+    <section id="nosotros" class="about-section py-5 mb-lg-5 px-3 px-md-5">
+        <div class="container ">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animate-fade-in">
+                    <span class="badge rounded-pill custom-badge-green mb-4">Sobre nosotros</span>
+                    <h2 class="display-4 fw-bold text-white mb-4">¿Quiénes somos?</h2>
+                    <div class="about-content pe-3 text-white-50">
+                        <p class="mb-4 ">
+                            Founded in 2015, our design studio has grown from a small team of passionate 
+                            designers to a full-service creative agency. We believe in the power of design 
+                            to transform businesses and create meaningful connections with audiences.
+                        </p>
+                        <p>
+                            Our approach combines strategic thinking, creative excellence, and technical 
+                            expertise to deliver solutions that not only look beautiful but also drive results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 animate-slide-up">
+                    <div class="about-image-wrapper">
+                        <img src="imagenes/Equipo-nexioSit.webp" alt="Nuestro equipo trabajando" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Servicios-->
+    <section id="servicios" class="services-section  py-5 mb-lg-5 px-md-5 px-3">
+        <div class="container text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-3">Nuestros servicios</h2>
+            <p class="lead text-white-50 mx-auto" style="max-width: 700px;">
+                Soluciones tecnológicas diseñadas para maximizar la eficiencia y el crecimiento de tu empresa
+            </p>
+        </div>
+
+        <div class="container">
+            <div id="servicesCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="service-card p-4 mx-2">
+                            <div class="icon-box mb-4"><i class="bi bi-magic"></i></div>
+                            <h4 class="text-white mb-3">Automatización de Marketing</h4>
+                            <p class="text-white-50 small">Incrementa tus conversiones enviando el mensaje correcto en el momento exacto.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-card p-4 mx-2">
+                            <div class="icon-box mb-4"><i class="bi bi-box-seam"></i></div>
+                            <h4 class="text-white mb-3">Integración de CRM</h4>
+                            <p class="text-white-50 small">Centraliza toda la información de tus clientes y elimina tareas manuales.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-card p-4 mx-2">
+                            <div class="icon-box mb-4"><i class="bi bi-robot"></i></div>
+                            <h4 class="text-white mb-3">Agentes IA</h4>
+                            <p class="text-white-50 small">Atención al cliente personalizada 24/7 que resuelve dudas complejas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-card p-4 mx-2">
+                            <div class="icon-box mb-4"><i class="bi bi-stars"></i></div>
+                            <h4 class="text-white mb-3">Consultoría n8n</h4>
+                            <p class="text-white-50 small">Optimiza tus flujos de trabajo internos ahorrando hasta un 40% de tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators position-relative mt-2">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+    
+            <div class="row g-4 d-none d-md-flex">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box mb-4"><i class="bi bi-magic"></i></div>
+                        <h4 class="text-white mb-3">Automatización de Marketing</h4>
+                        <p class="text-white-50 small">Incrementa tus conversiones enviando el mensaje correcto en el momento exacto sin mover un dedo.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box mb-4"><i class="bi bi-box-seam"></i></div>
+                        <h4 class="text-white mb-3">Integración de CRM</h4>
+                        <p class="text-white-50 small">Centraliza toda la información de tus clientes y elimina las tareas manuales de entrada de datos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box mb-4"><i class="bi bi-robot"></i></div>
+                        <h4 class="text-white mb-3">Agentes IA</h4>
+                        <p class="text-white-50 small">Atención al cliente personalizada 24/7 que resuelve dudas complejas y califica prospectos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card p-4 h-100">
+                        <div class="icon-box mb-4"><i class="bi bi-stars"></i></div>
+                        <h4 class="text-white mb-3">Consultoría n8n</h4>
+                        <p class="text-white-50 small">Optimiza tus flujos de trabajo internos ahorrando hasta un 40% de tiempo en tareas repetitivas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Servicios-->
+
+    <!--Beneficios-->
+    <section class="stats-section  px-md-5 px-3">
+        <div class="container">
+            <div class="text-left mb-5">
+                <span class="badge rounded-pill custom-badge-green mb-4">Beneficios</span>
+                <h2 class="display-4 fw-bold text-white mb-4">Nuestros logros en números</h2>
+                <p class="lead text-white-50 max-w-700">
+                    Brindamos a las empresas herramientas efectivas para mejorar los flujos de trabajo, boost eficiencia, y fomentar el crecimiento escalable.
+                </p>
+            </div>
+    
+            <div class="row g-4 text-center mt-5">
+                <div class="col-12 col-md-4">
+                    <div class="stat-item">
+                        <p class="text-white-50 small mb-3 text-uppercase fw-bold">Reducción de tiempo</p>
+                        <h3 class="display-2 fw-bold text-white"><span class="counter" data-target="95">0</span>%</h3>
+                        <p class="text-white-50 beneficio">Optimización de procesos operativos</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="stat-item">
+                        <p class="text-white-50 small mb-3 text-uppercase fw-bold">Operatividad total</p>
+                        <h3 class="display-2 fw-bold text-white"><span class="counter" data-target="24">0</span>/7</h3>
+                        <p class="text-white-50">Sistemas que trabajan sin interrupciones</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="stat-item">
+                        <p class="text-white-50 small mb-3 text-uppercase fw-bold">Crecimiento</p>
+                        <h3 class="display-2 fw-bold text-white"><span class="counter" data-target="3.5" data-decimal="true">0</span>x</h3>
+                        <p class="text-white-50">Aceleración de resultados comerciales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Contáctanos-->
+    <section id="contacto" class="contact-section pb-5 px-3 px-md-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge rounded-pill custom-badge-green mb-4">Contáctanos</span>
+                    <h2 class="display-4 fw-bold text-white mb-3">¡Trabajemos juntos!</h2>
+                    <p class="text-white-50 mb-5 fs-6">Hablemos de tu próximo gran paso. Contáctanos y hagamos realidad tu visión</p>
+                    
+                    
+
+                    <div class="contact-details d-flex flex-column align-items-center align-items-md-start">
+    
+                        <div class="d-flex flex-column flex-md-row align-items-center mb-4 text-center text-md-start">
+                            <div class="icon-square me-md-3 mb-2 mb-md-0"><i class="bi bi-geo-alt"></i></div>
+                            <p class="text-white-50 mb-0">Yaquis 106, Las Bugambilias, 37270 León de los Aldama, Gto.</p>
+                        </div>
+                    
+                        <div class="d-flex flex-column flex-md-row align-items-center mb-4 text-center text-md-start">
+                            <div class="icon-square me-md-3 mb-2 mb-md-0"><i class="bi bi-envelope"></i></div>
+                            <p class="text-white-50 mb-0">nexiosit.ventas@gmail.com</p>
+                        </div>
+                    
+                        <div class="d-flex flex-column flex-md-row align-items-center mb-4 text-center text-md-start">
+                            <div class="icon-square me-md-3 mb-2 mb-md-0"><i class="bi bi-telephone"></i></div>
+                            <p class="text-white-50 mb-0">552 223 34 89</p>
+                        </div>
+
+                </div>
+    
+                    <div class="social-links-simple d-flex gap-4 mt-5">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6">
+                    <div class="glass-form-container p-4 p-md-5">
+                        <h3 class="text-white fw-bold mb-2">Envíenos un mensaje</h3>
+                        <p class="text-white-50 mb-4">Complete el formulario y nos comunicaremos con usted en breve.</p>
+                        
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-white small fw-bold" >Nombre</label>
+                                    <input type="text" class="form-control glass-input" placeholder="Escribe tu nombre">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white invisible small" >Apellido</label>
+                                    <input type="text" class="form-control glass-input" placeholder="Escribe tu apellido">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white small fw-bold" >Email</label>
+                                    <input type="email" class="form-control glass-input" placeholder="ejemplo@domain.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white small fw-bold " >Describe tu proceso crítico</label>
+                                    <textarea class="form-control glass-input" rows="4" placeholder="Ej. Queremos automatizar el control de inventario y mejorar el seguimiento de pedidos."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-nexio-primary w-100 rounded-pill py-3 fw-bold">
+                                        Solicitar diagnóstico gratuito
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-section pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="imagenes/Logo-nexiosit.webp" alt="Nexio SIT" height="45" class="mb-4">
+                    <p class="text-white-50 pe-lg-5">
+                        Impulsando la transformación digital con Inteligencia Artificial.
+                    </p>
+                    <div class="footer-social-links d-flex gap-3 mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white fw-bold mb-4">Empresa</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">¿Quiénes somos?</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-4">Servicios</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Automatización de Marketing</a></li>
+                        <li><a href="#">Integración de CRM</a></li>
+                        <li><a href="#">Agentes IA</a></li>
+                        <li><a href="#">Consultoría n8n</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white fw-bold mb-4">Contacto</h5>
+                    <ul class="list-unstyled footer-contact-info">
+                        <li class="mb-3">
+                            <a href="mailto:nexiosit.ventas@gmail.com" class="text-white-50 text-decoration-none">
+                                nexiosit.ventas@gmail.com
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="tel:+525522253489" class="text-white-50 text-decoration-none">
+                                552 225 34 89
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <hr class="footer-divider">
+    
+            <div class="row pt-3 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">2026 Nexio SIT. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="footer-legal-links">
+                        <a href="#" class="small text-white-50 text-decoration-none me-3">Aviso de Privacidad</a>
+                        <a href="#" class="small text-white-50 text-decoration-none">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+    
+            
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+
+    <!--Chatbot-->
+    <button id="chat-btn" class="btn shadow-lg rounded-circle" onclick="toggleChat()" 
+        style="position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; z-index: 2000; background-color: #57DCCD; border: none; color: #0a0a0a;">
+        <i class="bi bi-chat-dots-fill" style="font-size: 1.8rem;"></i>
+    </button>
+
+    <div id="chat-window" class="card shadow-lg d-none animate-fade-in" 
+         style="position: fixed; bottom: 110px; right: 30px; width: 350px; height: 500px; z-index: 2000; border: 1px solid rgba(255,255,255,0.1); background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-radius: 20px;">
+        
+        <div class="card-header d-flex justify-content-between align-items-center" style="background: #57DCCD; border-radius: 20px 20px 0 0; border: none; padding: 15px;">
+            <div class="d-flex align-items-center">
+                <div class="bg-dark rounded-circle me-2" style="width: 10px; height: 10px;"></div>
+                <h6 class="mb-0 fw-bold text-dark">Nexio Assistant</h6>
+            </div>
+            <button type="button" class="btn-close btn-close-white" onclick="toggleChat()" style="filter: invert(1);"></button>
+        </div>
+    
+        <div class="card-body overflow-auto d-flex flex-column p-3" id="chat-body" style="scrollbar-width: thin;">
+            <div class="mb-3 text-start">
+                <div class="p-3 rounded-4 shadow-sm" style="background: rgba(255,255,255,0.05); color: #e2e8f0; display: inline-block; max-width: 85%; font-size: 0.9rem;">
+                    ¡Hola! 👋 
+                </div>
+            </div>
+        </div>
+    
+        <div class="card-footer bg-transparent border-0 p-3">
+            <div class="input-group bg-dark rounded-pill p-1 border" style="border-color: rgba(87, 220, 205, 0.3) !important;">
+                <input type="text" id="chat-input" class="form-control border-0 bg-transparent text-white ms-2" placeholder="Escribe tu duda..." style="box-shadow: none;">
+                <button class="btn rounded-circle" onclick="sendMsg()" style="background: #57DCCD; color: #0a0a0a; width: 40px; height: 40px; padding: 0;">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--Chatbot-->
+
+    <!--BackToTop-->
+    <button id="btn-back-to-top" class="btn shadow-lg rounded-circle" onclick="scrollToTop()" title="Volver arriba">
+        <i class="bi bi-chevron-up" style="font-size: 1.5rem;"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
