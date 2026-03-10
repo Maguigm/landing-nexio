@@ -32,7 +32,7 @@
             <a class="navbar-brand" href="#">
              <img src="imagenes/Logo-nexiosit.webp" alt="Nexio SIT" height="40" fetchpriority="high">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -172,10 +172,10 @@
                     </div>
                 </div>
                 <div class="carousel-indicators position-relative mt-2">
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-label="Ir al servicio 1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Ir al servicio 2"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Ir al servicio 3"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3" aria-label="Ir al servicio 4"></button>
                 </div>
             </div>
     
@@ -404,7 +404,7 @@
     
 
     <!--Chatbot-->
-    <button id="chat-btn" class="btn shadow-lg rounded-circle" onclick="toggleChat()" 
+    <button id="chat-btn" class="btn shadow-lg rounded-circle" onclick="toggleChat()" aria-label="Abrir chat de soporte"  
         style="position: fixed; bottom: 30px; right: 30px; width: 65px; height: 65px; z-index: 2000; background-color: #57DCCD; border: none; color: #0a0a0a;">
         <i class="bi bi-chat-dots-fill" style="font-size: 1.8rem;"></i>
     </button>
@@ -450,6 +450,7 @@
 </body>
 
 </html>
+
 
 
 
