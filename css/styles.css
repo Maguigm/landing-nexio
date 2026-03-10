@@ -107,7 +107,6 @@ h1, h2, h3, h4 {
     position: relative;
 }
 
-/* Opcional: Si quieres que el resto de las secciones sean traslúcidas */
 .about-section, .services-section, .stats-section {
     background: transparent;
 }
@@ -197,7 +196,7 @@ h1, h2, h3, h4 {
 
 /* Botón personalizado */
 .btn-nexio-primary {
-    background-color: var(--nexio-cyan);
+    background-color: #1B8C82;
     color: white;
     border: none;
     transition: 0.3s;
@@ -210,7 +209,7 @@ h1, h2, h3, h4 {
 }
 
 .text-cyan {
-    color: var(--nexio-cyan);
+    color: #1B8C82;
 }
 
 .max-w-700 {
@@ -305,7 +304,7 @@ h1, h2, h3, h4 {
 
 .custom-badge {
     /*background-color: rgba(0, 255, 204, 0); /* Color cian con transparencia */
-    background-color: var(--nexio-cyan);
+    background-color: #1B8C82;
     color: #FFFF;
     padding: 8px 20px;
     font-size: 0.9rem;
@@ -401,7 +400,7 @@ h1, h2, h3, h4 {
 .icon-box {
     width: 50px;
     height: 50px;
-    background: #26b1a5; /* Fondo del icono con opacidad */
+    background: #1B8C82; /* Fondo del icono con opacidad */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -477,7 +476,7 @@ h1, h2, h3, h4 {
 
 .custom-badge {
     background-color: rgba(38, 177, 165, 0.2);
-    color: #26b1a5;
+    color: #1B8C82;
     border: 1px solid #26b1a5;
     padding: 8px 20px;
 }
@@ -526,7 +525,7 @@ h1, h2, h3, h4 {
 
 /* Badge Verde exacto */
 .custom-badge-green {
-    background-color: #26b1a5;
+    background-color: #1B8C82;
     color: white;
     padding: 8px 20px;
     font-weight: 700;
@@ -546,7 +545,7 @@ h1, h2, h3, h4 {
 .icon-square {
     width: 40px;
     height: 40px;
-    background: #26b1a5;
+    background: #1B8C82;
     color: white;
     display: flex;
     align-items: center;
@@ -587,7 +586,7 @@ h1, h2, h3, h4 {
 
 /* Botón */
 .btn-nexio-primary {
-    background-color: #26b1a5;
+    background-color: #1B8C82;
     border: none;
     color: white;
 }
@@ -664,3 +663,4 @@ h1, h2, h3, h4 {
         padding-left: 0;
     }
 }
+
