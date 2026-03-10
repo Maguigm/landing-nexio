@@ -7,20 +7,24 @@
             const target = +counter.getAttribute('data-target');
             const isDecimal = counter.getAttribute('data-decimal') === 'true';
             
+            // 1. LECTURA ÚNICA: Obtenemos el valor al inicio y lo guardamos en memoria
+            let currentCount = +counter.textContent || 0; 
+            const inc = target / speed;
+            
             const updateCount = () => {
-                const count = +counter.innerText;
-                const inc = target / speed;
-    
-                if (count < target) {
+                if (currentCount < target) {
                     if (isDecimal) {
-                        counter.innerText = (count + 0.1).toFixed(1);
+                        currentCount += 0.1; // Actualizamos la variable en memoria
+                        // 2. ESCRITURA OPTIMIZADA: Usamos textContent en vez de innerText
+                        counter.textContent = currentCount.toFixed(1); 
                         setTimeout(updateCount, 40);
                     } else {
-                        counter.innerText = Math.ceil(count + inc);
+                        currentCount += inc; // Actualizamos la variable en memoria
+                        counter.textContent = Math.ceil(currentCount); 
                         setTimeout(updateCount, 20);
                     }
                 } else {
-                    counter.innerText = target;
+                    counter.textContent = target; // Valor final exacto
                 }
             };
             updateCount();
@@ -198,5 +202,6 @@
 
         
     
+
 
     
